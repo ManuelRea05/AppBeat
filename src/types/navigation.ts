@@ -4,6 +4,12 @@ export type RootStackParamList = {
   Welcome: undefined;
   Login: undefined;
   Register: undefined;
-  Home: undefined;
+  Inicio: undefined;
+  Upload: undefined;
+  Search: undefined;
+  Profile: undefined;
+  Chat: undefined;
+  Library: undefined;
+  MainApp: undefined;
 };
 

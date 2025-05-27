@@ -29,7 +29,7 @@ export default function SplashScreen({ navigation }: any) {
     try {
       const session = await AsyncStorage.getItem('userSession');
       if (session) {
-        navigation.replace('Home'); // Usuario con sesión activa
+        navigation.replace('MainApp'); // Usuario con sesión activa
       } else {
         navigation.replace('Onboarding'); // Usuario nuevo o sin sesión
       }

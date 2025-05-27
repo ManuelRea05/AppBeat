@@ -7,6 +7,13 @@ import LoginScreen from '../screens/LoginScreen';
 import RegisterScreen from '../screens/RegisterScreen';
 import { RootStackParamList } from '../../types/navigation';
 import HomeScreen from '../screens/HomeScreen';
+import UploadScreen from '../screens/UploadScreen';
+import SearchScreen from '../screens/SearchScreen';
+import ProfileScreen from '../screens/ProfileScreen';
+import ChatScreen from '../screens/ChatScreen';
+import LibraryScreen from '../screens/LibraryScreen';
+import AppNavigation from '../navigation/AppNavigation';
+
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -17,7 +24,7 @@ export default function AuthStack() {
       <Stack.Screen name="Onboarding" component={OnboardingScreen} />
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Register" component={RegisterScreen} />
-      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="MainApp" component={AppNavigation} />
     </Stack.Navigator>
   );
 }

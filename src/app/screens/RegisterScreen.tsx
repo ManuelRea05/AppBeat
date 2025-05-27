@@ -40,7 +40,7 @@ export default function RegisterScreen({ navigation }: any) {
         await AsyncStorage.setItem('userSession', JSON.stringify({ email }));
         Alert.alert('Registro exitoso', `¡Bienvenido/a ${email}!`);
 
-        navigation.replace('Home'); // Redirige a la pantalla principal
+        navigation.replace('MainApp'); // Redirige a la pantalla principal
       } catch (error) {
         console.error('Error al guardar la sesión', error);
         Alert.alert('Error', 'Ocurrió un problema al registrar');
